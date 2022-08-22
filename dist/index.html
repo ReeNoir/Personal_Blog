@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Personal Blog</title>
   </head>
-  <body>
+  <body class="page">
     <div class="container">
           <aside class="sidebar"> <img class="sidebar__footer" src="../img/sidebar__header.jpg" alt="setup with laptop">
             <div class="profile"><img class="profile__photo" src="../img/profile__photo.jpg" alt="photo of me">
@@ -22,9 +22,18 @@
             </div>
           </aside>
       <div class="main">
-        <header class="header">Header</header>
-        <div class="page"></div>
-        <footer> </footer>
+        <header class="header">
+          <nav class="nav"><a class="nav__link" href="#">Main</a>
+            <div class="nav__articles nav__link">Articles
+              <div class="nav__drop-down hide"><a href="">Website development </a><a href="">Internet Marketing</a><a href="">Video promotion </a></div>
+            </div><a class="nav__link" href="#">About Me </a><a class="nav__link" href="#">Advertising</a><a class="nav__link nav__account" href="#">Account </a>
+          </nav>
+          <div class="search">
+            <input class="search__input" type="text" name="" placeholder="Blog search"><a href="#"> </a>
+          </div>
+        </header>
+        <div class="content"></div>
+        <footer></footer>
       </div>
     </div>
     <script src="js/app.min.js"></script>
