@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 .page {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background-color: #181818;
+  background-color: #252525;
 }
 
 .container {
@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100%;
   display: flex;
   margin: 0 auto;
+  background-color: #181818;
 }
 
 .container_mini {
