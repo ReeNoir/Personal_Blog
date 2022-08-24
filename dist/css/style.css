@@ -26,6 +26,7 @@ nav, footer, header, aside {
 
 html, body {
   width: 100%;
+  height: 100vh;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -125,14 +126,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   max-width: 1000px;
+  min-height: 100%;
   display: flex;
   margin: 0 auto;
   background-color: #181818;
 }
 
 .container_mini {
-  max-width: 600px;
-  margin: 0 50px;
+  max-width: 700px;
+  padding: 60px 50px 0;
   flex-direction: column;
 }
 
@@ -141,12 +143,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   width: 70%;
+  min-height: 100%;
 }
 
 /* Blocks */
 .sidebar {
   background-color: #202020;
   width: 30%;
+  min-height: 100%;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -332,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .stories {
   display: flex;
-  margin: 60px 0;
+  margin-bottom: 60px;
   height: 195px;
 }
 
@@ -508,6 +512,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 .flipper__item:hover {
   background-color: #104BE3;
+}
+
+.article {
+  width: 100%;
+  background-color: #202020;
+}
+
+.article__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 25px 42px;
+}
+
+.article__buttons {
+  display: flex;
+  color: #d2d2d2;
+}
+
+.article__back {
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+
+.article__share {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.article__share-img {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.article.content {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__title {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.article__info {
+  display: flex;
+}
+
+.article__date,
+.article__topic {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #828282;
+  text-transform: lowercase;
+}
+
+.article__topic {
+  position: relative;
+  margin-left: 35px;
+}
+.article__topic:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: -19px;
+  bottom: 2px;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #828282;
+}
+
+.article__text {
+  width: 100%;
+  line-height: 1.5;
+}
+.article__text p {
+  margin: 30px 0;
+}
+
+.article__img {
+  width: 100%;
+  height: auto;
 }
 
 /* Helpers */
