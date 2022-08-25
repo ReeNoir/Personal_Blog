@@ -601,6 +601,56 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+.recommendation {
+  position: relative;
+  margin: 30px 0 60px;
+}
+.recommendation:after, .recommendation:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: #1c1c1c;
+}
+.recommendation:before {
+  top: -30px;
+}
+.recommendation:after {
+  bottom: -30px;
+}
+
+.recommendation__name {
+  margin-bottom: 20px;
+  font-size: 1.14rem;
+  font-weight: 500;
+}
+
+.recommendation__content {
+  margin: 0 -25px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommendation__item {
+  width: 50%;
+  padding: 0 30px 20px 25px;
+}
+
+.recommendation__title {
+  overflow: hidden;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #F3EBA2;
+}
+
+.recommendation__date {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+}
+
 /* Helpers */
 .hide {
   display: none;
