@@ -523,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 16px 25px 42px;
+  padding: 16px 25px 20px;
 }
 
 .article__buttons {
@@ -652,10 +652,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
 }
 
+.comments {
+  margin-bottom: 40px;
+}
+
 .comments__maker {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .comments__title {
@@ -689,51 +694,55 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #3137C9;
   border-radius: 5px;
   background-color: #3137C9;
+  transition: background 0.1s linear;
 }
 .comments__send:hover {
   background-color: transparent;
 }
 
-.comments__maker {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.comments__item {
+  margin: 30px 0;
 }
 
-.comments__title {
-  font-size: 1.17rem;
-  font-weight: 500;
-}
-
-.comments__input {
-  width: 100%;
-  height: 26px;
-  margin: 15px 0;
-  min-height: 26px;
-  max-height: 100px;
-  color: inherit;
-  line-height: 1.5;
-  resize: none;
-  border-bottom: 1px solid #3f3f3f;
+.comments__photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   overflow: hidden;
-  background-color: transparent;
-}
-.comments__input::-webkit-scrollbar {
-  width: 7px;
-}
-.comments__input::-webkit-scrollbar-thumb {
-  background-color: #121212;
-  border-radius: 5px;
 }
 
-.comments__send {
-  padding: 7px 30px;
-  border: 2px solid #3137C9;
-  border-radius: 5px;
-  background-color: #3137C9;
+.comments__info {
+  display: inline-block;
+  margin-left: 15px;
 }
-.comments__send:hover {
-  background-color: transparent;
+
+.comments__name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.comments__time {
+  font-size: 0.85rem;
+  color: #727272;
+}
+
+.comments__text {
+  margin: 20px 0 10px;
+  font-size: 0.85rem;
+}
+
+.comments__reply {
+  margin-left: 30px;
+}
+
+.comments__reply-btn {
+  color: #107eff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.comments__reply-btn:hover {
+  text-decoration: underline;
 }
 
 /* Helpers */
