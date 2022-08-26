@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container_mini {
   max-width: 700px;
-  padding: 60px 50px 0;
+  padding: 50px;
   flex-direction: column;
 }
 
@@ -517,13 +517,14 @@ h1, h2, h3, h4, h5, h6 {
 .article {
   width: 100%;
   background-color: #202020;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
 }
 
 .article__inner {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 16px 25px 20px;
+  padding: 16px 25px 0;
 }
 
 .article__buttons {
@@ -549,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article.content {
-  margin: 15px 0;
+  margin: 15px 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -653,7 +654,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .comments {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .comments__maker {
