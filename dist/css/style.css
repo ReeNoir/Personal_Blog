@@ -761,6 +761,74 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+.projects__title {
+  font-size: 1.5rem;
+}
+
+.projects__item {
+  display: flex;
+  margin: 30px 0;
+  box-shadow: 15px 12px 9px rgba(0, 0, 0, 0.2);
+  background-color: #202020;
+}
+
+.projects__img {
+  width: 51.66666%;
+  height: auto;
+}
+
+.projects__info {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__link {
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.projects__link:hover {
+  text-decoration: underline;
+}
+
+.projects__description {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #d2d2d2;
+  line-height: 1.9;
+}
+
+.projects__tags span {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 4px 9px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  border-radius: 3px;
+  background-color: #EA8C1E;
+}
+.projects__tags span:last-child {
+  margin-right: 0;
+}
+
+.projects__goto {
+  margin-top: auto;
+  padding: 8px 13px;
+  align-self: flex-end;
+  font-size: 0.85rem;
+  color: #fff;
+  border: 1px solid #3137C9;
+  border-radius: 5px;
+  background-color: #3137C9;
+  transition: background 0.1s linear;
+}
+.projects__goto:hover {
+  background-color: transparent;
+}
+
 /* Helpers */
 .hide {
   display: none;
