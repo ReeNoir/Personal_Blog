@@ -829,6 +829,69 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.auth__title {
+  margin: 10px 0 60px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.auth__input {
+  margin-bottom: 25px;
+  padding: 5px 0;
+  width: 100%;
+  color: #fff;
+  line-height: 1.5;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.auth__input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.auth__input:focus {
+  border-bottom: 1px solid #107EFF;
+}
+
+.auth__btn {
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  border: 1px solid #3137C9;
+  border-radius: 5px;
+  background-color: #3137C9;
+  transition: background 0.1s linear;
+}
+.auth__btn:hover {
+  background-color: transparent;
+}
+
+.auth__other {
+  align-self: flex-start;
+  display: flex;
+  width: 100%;
+  color: #3137C9;
+}
+
+.auth__sign-up,
+.auth__pass-reset {
+  text-decoration: underline;
+}
+.auth__sign-up:hover,
+.auth__pass-reset:hover {
+  text-decoration: none;
+}
+
+.auth__sign-up {
+  margin-left: auto;
+}
+
 /* Helpers */
 .hide {
   display: none;
