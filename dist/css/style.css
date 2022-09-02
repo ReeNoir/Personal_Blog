@@ -880,16 +880,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .auth__sign-up,
+.auth__sign-in,
 .auth__pass-reset {
   text-decoration: underline;
 }
 .auth__sign-up:hover,
+.auth__sign-in:hover,
 .auth__pass-reset:hover {
   text-decoration: none;
 }
 
 .auth__sign-up {
   margin-left: auto;
+}
+
+.auth__sign-in {
+  margin: 0 auto;
 }
 
 /* Helpers */
