@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/style.min.css">
-      <title>Authorization</title>
+      <title>Profile</title>
     </head>
   <body class="page">
     <div class="container">
@@ -33,12 +33,21 @@
         </header>
         <div class="content">
           <div class="container container_mini">
-            <div class="auth">
-              <div class="auth__title">Sign in</div>
-              <form class="auth__inner" action="" method="post"></form>
-              <input class="auth__email auth__input" type="email" placeholder="Enter email" value="chernyshev_1998@mail.ru">
-              <input class="auth__pass auth__input" type="password" placeholder="Enter password"><a class="auth__btn" href="account.html">Sign in</a>
-              <div class="auth__other"><a class="auth__pass-reset" href="">Forgot your pass?                            </a><a class="auth__sign-up" href="signup.html">Sign up</a></div>
+            <div class="account">
+              <div class="account__title">Profile</div>
+              <form class="account__form" action="" method="post">
+                <div class="account__data">
+                  <input class="account__name account__input" type="text" placeholder="New name" value="Aleksei Chernyshev">
+                  <input class="account__email account__input" type="email" placeholder="New email" value="chernyshev_1998@mail.ru">
+                  <input class="account__pass account__input" type="password" placeholder="New password">
+                  <input class="account__pass-conf account__input" type="password" placeholder="Confirm password">
+                </div>
+                <div class="account__photo"><img class="account__img" src="img/account__img.jpg" alt="">
+                  <label class="account__lable" for="account__img">select avatar</label>
+                  <input class="account__input-img" id="account__img" type="file">
+                </div>
+                <button class="account__button" type="submit">Save</button>
+              </form>
             </div>
           </div>
         </div>
