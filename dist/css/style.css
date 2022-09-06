@@ -346,10 +346,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 140px;
   height: auto;
   cursor: pointer;
+  overflow: hidden;
   box-shadow: 15px 0 10px rgba(0, 0, 0, 0.15);
 }
 .stories__item:last-child {
   margin-right: 0;
+}
+.stories__item:hover .stories__img {
+  transform: scale(1.3);
+  transition-duration: 5s;
 }
 
 .stories__title {
@@ -363,6 +368,7 @@ h1, h2, h3, h4, h5, h6 {
 .stories__img {
   width: 100%;
   height: 100%;
+  transition: transform 1.5s ease-in-out;
 }
 
 .stories__time {
