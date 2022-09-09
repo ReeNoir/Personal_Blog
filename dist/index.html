@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="css/style.min.css">
       <title>Personal Blog</title>
     </head>
-  <body class="page">
+  <body class="page no-scrolls">
     <div class="container">
           <aside class="sidebar"> <img class="sidebar__footer" src="../img/sidebar__header.jpg" alt="setup with laptop">
             <div class="profile"><img class="profile__photo" src="../img/profile__photo.jpg" alt="photo of me">
@@ -110,7 +110,14 @@
         <footer></footer>
       </div>
     </div>
-    <div class="module"></div>
+    <div class="module" id="module">
+          <div class="module__content stories-module">
+            <div class="stories-module__content">
+              <video class="stories-module__img" src="" poster="img/stories__photo.jpg"></video>
+              <div class="stories-module__play-bar"><img class="stories-module__play" src="img/play__btn.png"><img class="stories-module__bar" src="img/stories-bar.png"></div>
+            </div>
+          </div>
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
